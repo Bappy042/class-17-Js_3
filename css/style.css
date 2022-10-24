@@ -1,0 +1,116 @@
+:root{
+    --primarycolor: cadetblue;
+    --Seconddarycolor:chocolate;
+    --thirdcolor: rebeccapurple;
+    --forthcolor: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color:var(--forthcolor);
+}
+body.darkmode{
+    --primarycolor: rgb(67, 82, 82);
+    --Seconddarycolor:rgb(172, 110, 65);
+    --thirdcolor: rgb(66, 52, 80);
+    --forthcolor:rgb(0, 0, 0);
+
+}
+nav{
+    width: 100%;
+    background-color: var(--primarycolor);
+}
+#side_manu{
+    width: 100px;
+    height: 100%;
+    background-color: var(--primarycolor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    margin-left: -100px;
+    transition: 1s;
+    
+}
+#side_manu.active{
+    margin-left: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 30%;
+}
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+.manu{
+    width: 70%;
+}
+.manu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.manu li a{
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.manu_1 i{
+    padding-top: 30px;
+}
+#banner{
+    width: 100%;
+}
+.main_banner{
+    display: flex;
+}
+.banner_2{
+    padding-top: 20px;
+    color: var(--Seconddarycolor);
+    font-size: 20px;
+}
+.input{
+    display: block;
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    border: 2px solid var(--thirdcolor);
+    margin: auto;
+}
+#email{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#password{
+    margin: auto;
+    width: 350px;
+    padding: 20px;
+}
+#footer{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
